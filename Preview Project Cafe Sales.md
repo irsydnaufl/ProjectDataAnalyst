@@ -39,17 +39,17 @@ Berdasarkan objektif analisis yang telah disebutkan, berikut goals/tujuan yang d
 5. Melakukan pembaruan sistem untuk mandatory fields sehingga data berlabel yang tidak sesuai tidak terjadi kembali sehingga keputusan bisnis ke depannya tidak bias.
 
 ## Exploratory Data Analysis (EDA)
-Proses EDA menggunakan <a href="https://github.com/irsydnaufl/ProjectCafeSales/blob/main/Pyhton/CoffeAnalyst.ipynb">**Python di JupyterLab**</a> dengan memuat dataset menggunakan pustaka Pandas untuk membedah struktur dan distribusi data awal. Untuk membersihkan dataset, langkah yang perlu dilakukan yaitu:
+Proses EDA menggunakan <a href="https://github.com/ProjectIrsyad/ProjectCafeSales/blob/main/Pyhton/CoffeAnalyst.ipynb">**Python di JupyterLab**</a> dengan memuat dataset menggunakan pustaka Pandas untuk membedah struktur dan distribusi data awal. Untuk membersihkan dataset, langkah yang perlu dilakukan yaitu:
 1. **Remove Duplicate** untuk mengeliminasi baris ganda yang berpotensi mendistorsi hasil agregasi.
 2. **Data Cleaning**, untuk mengidentifikasi dan menangani nilai kosong (missing values) agar kalkulasi statistik tidak bias.
 3. **Change Data Type**, perlu penyesuaian type data agar feature sesuai dengan data yang ada, misalnya mengubah tipe data teks (string) pada kolom tanggal menjadi format datetime atau merapikan angka numerik.
 4. **Make New Feature** , untuk menggali insight bisnis yang lebih tajam dilakukan rekayasa fitur (feature engineering) seperti menghitung margin keuntungan atau memetakan total pengeluaran yang mempermudah visualisasi tren performa secara menyeluruh.
 
 ## Visualization
-Setelah proses Data Cleaning kemudian data disimpan dalam format <a href="https://github.com/irsydnaufl/ProjectCafeSales/blob/main/csv/Clean_Cafe_Sales.csv">CSV</a> menjadi sebuah dataset yang bersih, tahapan analisis bergeser menjadi **visualisasi menggunakan Power BI** untuk mengkomunikasikan insight secara efektif. File CSV yang sudah bersih diimpor ke dalam Power BI untuk ditransformasikan menjadi **Dashbor interaktif** yang berisi visualisasi grafis, tren, dan metrik performa. Pada fase ini, fokus utama bukan lagi mencari missing values dan data cleaning, melainkan merangkai narasi data (storytelling) dan menyajikan kesimpulan visual yang intuitif guna mendukung pengambilan keputusan bisnis yang cepat serta akurat.
+Setelah proses Data Cleaning kemudian data disimpan dalam format <a href="https://github.com/ProjectIrsyad/ProjectCafeSales/blob/main/csv/Clean_Cafe_Sales.csv">CSV</a> menjadi sebuah dataset yang bersih, tahapan analisis bergeser menjadi **visualisasi menggunakan Power BI** untuk mengkomunikasikan insight secara efektif. File CSV yang sudah bersih diimpor ke dalam Power BI untuk ditransformasikan menjadi **Dashbor interaktif** yang berisi visualisasi grafis, tren, dan metrik performa. Pada fase ini, fokus utama bukan lagi mencari missing values dan data cleaning, melainkan merangkai narasi data (storytelling) dan menyajikan kesimpulan visual yang intuitif guna mendukung pengambilan keputusan bisnis yang cepat serta akurat.
 
-![Uploading Page 1.jpg…](https://github.com/irsydnaufl/ProjectCafeSales/blob/main/Power%20BI/Page%201.jpg)
+![Uploading Page1.jpg…](https://github.com/ProjectIrsyad/ProjectCafeSales/blob/main/Power%20BI/Page1.jpg)
 Halaman pertama menunjukkan total net revenue sebesar $49.51K dengan kontribusi terbesar berasal dari produk seperti salad, sandwich, dan smoothie. Kategori “Main Dish” dan “Food” mendominasi pendapatan, sementara tren revenue bulanan relatif stabil di kisaran $3.8K–$4.4K, dengan puncak pada Oktober dan penurunan di bulan Februari.
 
-![Uploading Page 2.jpg…](https://github.com/irsydnaufl/ProjectCafeSales/blob/main/Power%20BI/Page%202.jpg)
+![Uploading Page2.jpg…](https://github.com/ProjectIrsyad/ProjectCafeSales/blob/main/Power%20BI/Page2.jpg)
 Halaman kedua menampilkan total penjualan 25.93K item dengan tren bulanan yang konsisten pada pertengahan tahun(±2.0K–2.3K). Produk terlaris adalah coffee, juice, dan salad, sementara metode pembayaran dan lokasi transaksi menunjukkan distribusi yang cukup seimbang, meskipun masih terdapat data “unknown” yang perlu diperbaiki.
